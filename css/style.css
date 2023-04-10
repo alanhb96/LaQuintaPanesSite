@@ -52,6 +52,9 @@ footer{
     text-justify: auto;
     font-size: 16px;
     margin-bottom: 35px;
+    background-color: bisque;
+    padding: 2.5px;
+    border-radius: 5px;
 }
 
 .imgFluid{height: auto;width: 100%;}
