@@ -1,0 +1,454 @@
+:root{
+    --links-color:rgb(172, 154, 127); 
+}
+
+html {
+    background-image: url(../img/pattern3.jpg);
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+header {
+    background-color: black;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color:white;
+    font-size: 30px;
+}
+
+*{
+    margin:0;
+}
+
+li{
+    list-style-type: none;
+}
+
+.m20{
+    margin:20px;
+}
+
+#logoMarca{
+    background-color: white;
+    padding: 15px;
+    border-radius: 25px;
+}
+
+.introduccionHome{
+    width: 80%;
+    text-align: center;
+    text-justify: auto;
+    font-size:22px;
+}
+
+footer{
+    background-color: rgb(197, 182, 159);
+}
+
+.descripcionNosotros{
+    width: 70%;
+    text-justify: auto;
+    font-size: 16px;
+    margin-bottom: 35px;
+}
+
+.imgFluid{height: auto;width: 100%;}
+
+.buttonStyle{border-radius: 15px;}
+
+.m10{margin:10px;}
+
+form{display: flex; flex-direction: column;}
+
+.gridIndex{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto 800px auto;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav{
+    background-color: black;
+    margin:15px;
+}
+
+.footDiv{        
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mainIndex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.linksIndex h1{
+    display: inline;
+    background-color: var(--links-color);
+    padding:1px 8px;
+    margin: 20px;    
+}
+
+.gridNosotros{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+}
+
+.mainNos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#chefNosotros{
+    width: 780px;
+    height: 800px;
+    object-fit: contain;
+    margin-top: 30px;
+}
+
+.mainNos2{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: baseline;
+    margin: 20px;
+}
+
+.tituloNosotros h1 {
+    font-size: 72px;
+}
+
+.tituloNosotros{
+    padding: 5px;
+    margin: 15px;
+}
+
+.gridProductos{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+}
+
+.mainProd{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.descripcionProducto{
+    width: 40%;
+    height:5%;
+    text-align: center;
+    font-size:24px;
+    margin: 50px;
+}
+
+.lineaImg{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    width:85%;
+    height: auto;
+}
+
+.gridServicio{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto 800px auto;
+}
+
+.mainServicio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.descripcionServicio{
+    width: 70%;
+    height:20%;
+    font-size:18px;
+    margin: 50px;
+}
+
+.packConteiner{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 60px;
+}
+
+.pack1{
+    width:20%;
+    height:350px;
+    background-color: rgb(204, 204, 129);
+    padding: 15px;
+    border: 1px solid black;
+}
+
+.pack2{
+    width:20%;
+    height:350px;
+    background-color: rgb(204, 204, 129);   
+    padding: 15px;
+    border: 1px solid black;
+}
+
+.igServicios{
+    font-size: 18px;
+}
+
+.gridContacto{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto 800px auto;
+}
+
+.mainContacto{
+    display: grid;
+    grid-template-areas: 
+    "descripcionContacto descripcionContacto"
+    "formulario imagenForm";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+}
+
+.descripcionContacto {grid-area: descripcionContacto;}
+.formulario{grid-area: formulario;}
+.imagenForm{grid-area: imagenForm;}
+
+.descripcionContacto{
+    text-align: center;
+    font-size: 24px;
+}
+
+.formulario{
+    justify-self: end;
+}
+
+#imagenFormulario{
+    width: 480px;
+    height: 500px;
+    object-fit: contain;
+}
+
+/* DESKTOP */
+@media (min-width:1024px){
+    .linksNosotros h1{
+        display: inline;
+        background-color: var(--links-color);
+        padding:1px 8px;
+        margin: 20px;    
+    }
+
+    #galeria{
+        width: 20%;
+        height: 40%;
+        object-fit: contain;
+        margin: 15px;
+    }
+    
+}
+
+/* MOBILE */
+@media (max-width:768px){
+
+    .gridIndex{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav{
+        background-color: black;
+        margin:5px;
+    }
+
+    ul{padding: 0px;}
+
+    .footDiv{        
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .mainIndex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .linksIndex h1{
+        display: inline;
+        background-color: var(--links-color);
+        padding:1px 8px;
+        margin: 20px;    
+    }
+
+    #logoMarca{
+        padding: 5px;
+    }
+
+    .mainNos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #chefNosotros{
+        width: 100vw;
+        height: 100vw;
+        object-fit: contain;
+        margin-top: 30px;
+    }
+
+    .mainNos2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+    }
+
+    .tituloNosotros h1 {
+        font-size: 42px;
+    }
+
+    .tituloNosotros{
+        padding: 5px;
+        margin: 15px;
+    }
+
+    .descripcionNosotros{
+        width: 90%;
+        text-justify: auto;
+        font-size: 16px;
+        margin-bottom: 35px;
+    }
+
+    .linksNosotros h1{
+        display: inline;
+        background-color: var(--links-color);
+        padding:1px 8px;    
+    }
+
+    .mainProd{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .descripcionProducto{
+        width: 65%;
+        height:5%;
+        text-align: center;
+        font-size:18px;
+        margin: 20px;
+    }
+
+    #galeria{
+    margin-bottom: 15px;
+    }
+
+    .lineaImg{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+    }
+
+    .gridServicio{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto;
+    }
+
+    .descripcionServicio{
+        height:20%;
+        margin: 30px;
+        text-align: center;
+    }
+
+    .packConteiner{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        column-gap: 15px;
+    }
+
+    .pack1{
+        width:70vw;
+        height:200px;
+        background-color: rgb(204, 204, 129);
+        padding: 15px;
+        border: 1px solid black;
+        margin: 10px;
+    }
+
+    .pack2{
+        width: 70vw;
+        height:200px;
+        background-color: rgb(204, 204, 129);   
+        padding: 15px;
+        border: 1px solid black;
+        margin: 10px;
+    }
+
+    .igServicios{
+        font-size: 18px;
+    }
+
+    .gridContacto{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto;
+    }
+
+    .mainContacto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        column-gap: 15px;
+    }
+    
+    .descripcionContacto{
+        text-align: center;
+    }
+
+}
